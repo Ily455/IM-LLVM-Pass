@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -Wl,--gc-sections -shared  -o ManglePass.so CMakeFiles/ManglePass.dir/ManglePass.cpp.o  -Wl,-rpath,"\$ORIGIN/../lib:/usr/local/lib:" /usr/local/lib/libLLVMCore.so.19.0git /usr/local/lib/libLLVMSupport.so.19.0git -Wl,-rpath-link,/usr/local/lib 
