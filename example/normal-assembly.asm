@@ -98,7 +98,7 @@ Disassembly of section .text:
     172b:	89 75 f8             	mov    %esi,-0x8(%rbp)
     172e:	8b 75 fc             	mov    -0x4(%rbp),%esi
     1731:	03 75 f8             	add    -0x8(%rbp),%esi
-    1734:	48 8d 3d 4e ee ff ff 	lea    -0x11b2(%rip),%rdi        # 589 <_IO_stdin_used+0x19>
+    1734:	48 8d 3d 53 ee ff ff 	lea    -0x11ad(%rip),%rdi        # 58e <_IO_stdin_used+0x1e>
     173b:	b0 00                	mov    $0x0,%al
     173d:	e8 9e 00 00 00       	call   17e0 <printf@plt>
     1742:	48 83 c4 10          	add    $0x10,%rsp
@@ -112,9 +112,9 @@ Disassembly of section .text:
     1751:	48 89 e5             	mov    %rsp,%rbp
     1754:	48 83 ec 10          	sub    $0x10,%rsp
     1758:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%rbp)
-    175f:	c7 45 f4 05 00 00 00 	movl   $0x5,-0xc(%rbp)
-    1766:	c7 45 f8 07 00 00 00 	movl   $0x7,-0x8(%rbp)
-    176d:	8b 35 65 22 00 00    	mov    0x2265(%rip),%esi        # 39d8 <global_var>
+    175f:	c7 45 f4 90 01 00 00 	movl   $0x190,-0xc(%rbp)
+    1766:	c7 45 f8 14 00 00 00 	movl   $0x14,-0x8(%rbp)
+    176d:	8b 35 65 22 00 00    	mov    0x2265(%rip),%esi        # 39d8 <varstandsforvideoassistantrefereee>
     1773:	48 8d 3d fa ed ff ff 	lea    -0x1206(%rip),%rdi        # 574 <_IO_stdin_used+0x4>
     177a:	b0 00                	mov    $0x0,%al
     177c:	e8 5f 00 00 00       	call   17e0 <printf@plt>

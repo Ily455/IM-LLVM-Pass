@@ -3,11 +3,11 @@ source_filename = "test.c"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-%struct.MyStruct = type { i32, i32 }
+%struct.structurino = type { i32, i32 }
 
-@global_var = dso_local global i32 10, align 4
+@varstandsforvideoassistantrefereee = dso_local global i32 666, align 4
 @.str = private unnamed_addr constant [9 x i8] c"Sum: %d\0A\00", align 1
-@.str.1 = private unnamed_addr constant [21 x i8] c"Global variable: %d\0A\00", align 1
+@.str.1 = private unnamed_addr constant [26 x i8] c"Global variableuuuuh: %d\0A\00", align 1
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local void @my_function(i32 noundef %0, i32 noundef %1) #0 {
@@ -27,17 +27,17 @@ declare i32 @printf(ptr noundef, ...) #1
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local i32 @main() #0 {
   %1 = alloca i32, align 4
-  %2 = alloca %struct.MyStruct, align 4
+  %2 = alloca %struct.structurino, align 4
   store i32 0, ptr %1, align 4
-  %3 = getelementptr inbounds %struct.MyStruct, ptr %2, i32 0, i32 0
-  store i32 5, ptr %3, align 4
-  %4 = getelementptr inbounds %struct.MyStruct, ptr %2, i32 0, i32 1
-  store i32 7, ptr %4, align 4
-  %5 = load i32, ptr @global_var, align 4
+  %3 = getelementptr inbounds %struct.structurino, ptr %2, i32 0, i32 0
+  store i32 400, ptr %3, align 4
+  %4 = getelementptr inbounds %struct.structurino, ptr %2, i32 0, i32 1
+  store i32 20, ptr %4, align 4
+  %5 = load i32, ptr @varstandsforvideoassistantrefereee, align 4
   %6 = call i32 (ptr, ...) @printf(ptr noundef @.str.1, i32 noundef %5)
-  %7 = getelementptr inbounds %struct.MyStruct, ptr %2, i32 0, i32 0
+  %7 = getelementptr inbounds %struct.structurino, ptr %2, i32 0, i32 0
   %8 = load i32, ptr %7, align 4
-  %9 = getelementptr inbounds %struct.MyStruct, ptr %2, i32 0, i32 1
+  %9 = getelementptr inbounds %struct.structurino, ptr %2, i32 0, i32 1
   %10 = load i32, ptr %9, align 4
   call void @my_function(i32 noundef %8, i32 noundef %10)
   ret i32 0

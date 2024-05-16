@@ -7,7 +7,7 @@ Commands:
   opt -load-pass-plugin ../build/ManglePass.so -passes=manglepass test.ll -S -o mangled-test.ll
   clang test.c -o normal-exe
   clang mangled-test.ll -o mangled-exe
-  objdump -d normal-exe normal-assembly.asm
+  objdump -d normal-exe > normal-assembly.asm
   objdump -d mangled-exe > mangled-assembly.asm
   ```
 

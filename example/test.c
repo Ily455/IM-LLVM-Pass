@@ -13,12 +13,12 @@ void my_function(int a, int b) {
 
 int main() {
     struct structurino s;
-    s.x = 400;
+    s.iks = 400;
     s.igrig = 20;
 
     printf("Global variableuuuuh: %d\n", varstandsforvideoassistantrefereee);
 
-    my_function(s.x, s.igrig);
+    my_function(s.iks, s.igrig);
 
     return 0;
 }
