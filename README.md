@@ -33,11 +33,11 @@ An LLVM pass designed to obfuscate the names of identifiers in LLVM Intermediate
 2. Run the Identifier Mangling Pass on the LLVM IR code using the `opt` tool.
 
     ```bash
-    opt -load-pass-plugin /path/to/ManglePass.so -passes=manglepass < input.ll > output.ll
+    opt -load-pass-plugin /path/to/ManglePass.so -passes=manglepass < input.ll > -o output.ll
     ```
     This produces bitcode.
    ```bash
-    opt -load-pass-plugin /path/to/ManglePass.so -passes=manglepass < input.ll > output.ll
+    opt -S -load-pass-plugin /path/to/ManglePass.so -passes=manglepass < input.ll > -o output.ll
    ```
    This produces readable IR.
 
