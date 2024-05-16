@@ -1,30 +1,24 @@
 #include <stdio.h>
 
-// Define a struct
-struct MyStruct {
-    int x;
-    int y;
+struct structurino {
+    int iks;
+    int igrig;
 };
 
-// Define a global variable
-int global_var = 10;
+int varstandsforvideoassistantrefereee = 666;
 
-// Define a function
 void my_function(int a, int b) {
     printf("Sum: %d\n", a + b);
 }
 
 int main() {
-    // Use the struct
-    struct MyStruct s;
-    s.x = 5;
-    s.y = 7;
+    struct structurino s;
+    s.x = 400;
+    s.igrig = 20;
 
-    // Use the global variable
-    printf("Global variable: %d\n", global_var);
+    printf("Global variableuuuuh: %d\n", varstandsforvideoassistantrefereee);
 
-    // Use the function
-    my_function(s.x, s.y);
+    my_function(s.x, s.igrig);
 
     return 0;
 }
