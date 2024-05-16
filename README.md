@@ -35,8 +35,13 @@ An LLVM pass designed to obfuscate the names of identifiers in LLVM Intermediate
     ```bash
     opt -load-pass-plugin /path/to/ManglePass.so -passes=manglepass < input.ll > output.ll
     ```
+    This produces bitcode.
+   ```bash
+    opt -load-pass-plugin /path/to/ManglePass.so -passes=manglepass < input.ll > output.ll
+   ```
+   This produces readable IR.
 
-3. The output LLVM IR code (`output.ll`) will have the function names, global variable names, and struct type names mangled with randomly generated strings.
+4. The output LLVM IR code (`output.ll`) will have the function names, global variable names, and struct type names mangled with randomly generated strings.
 
 ## Example & Diff
 
