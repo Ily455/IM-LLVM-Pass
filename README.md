@@ -38,6 +38,10 @@ An LLVM pass designed to obfuscate the names of identifiers in LLVM Intermediate
 
 3. The output LLVM IR code (`output.ll`) will have the function names, global variable names, and struct type names mangled with randomly generated strings.
 
+## Example & Diff
+
+See [example](example/)
+
 ## License
 
 The Identifier Mangling Pass is licensed under the [MIT License](LICENSE).
